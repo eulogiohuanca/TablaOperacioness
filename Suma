@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package calculadora;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author LINCOLN
+ */
+public class Suma {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+        Scanner obtenerNumero = new Scanner(System.in);
+        int numero, J, Ñ;
+
+        System.out.print("indica el número que desea que se realize \n"
+                + " la operación de suma: ");
+        numero = obtenerNumero.nextInt();
+
+        for (J = 1; J <= numero; J++) {
+            for (Ñ = 1; Ñ <= 12; Ñ++) {
+                System.out.println((J + " + " + Ñ + " = " + (J + Ñ)));
+            }
+            System.out.println();
+
+        }
+    }
+
+}
